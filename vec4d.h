@@ -13,15 +13,14 @@
 struct vec4d {
 	union{
 		struct{
-			float x, y, z, k;
+			float x, y, z, w;
 		};
 	};
-public:
 
 	vec4d();
 	vec4d(const float x);
 	vec4d(const vec4d& b);
-	vec4d(	float m11,float m12,float m13,float m14);
+	vec4d(	float x,float y,float z,float w);
 	virtual ~vec4d();
 };
 std::ostream& operator<<(std::ostream& os, const vec4d& m);

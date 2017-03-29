@@ -2,9 +2,11 @@
 
 struct vec3d
 {
-	float x;
-	float y;
-	float z;
+	union{
+		struct{
+			float x, y, z;
+		};
+	};
 
 	explicit vec3d(
 		float x = 0.0f, 
