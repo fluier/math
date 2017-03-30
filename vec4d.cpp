@@ -35,3 +35,7 @@ vec4d operator +(const vec4d& a, const vec4d& b) {
 vec4d operator -(const vec4d& a, const vec4d& b) {
 	return vec4d(a.x-b.x,a.y-b.y,a.z-b.z,a.w-b.w);
 }
+
+float dotProd(const vec4d& a, const vec4d& b) {
+	return ((a.x*b.x) + (a.y*b.y) + (a.z*b.z) + (a.w*b.w));
+}

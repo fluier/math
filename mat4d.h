@@ -33,5 +33,6 @@ std::ostream& operator<<(std::ostream& os, const mat4d& m);
 mat4d operator+(const mat4d& a, const mat4d& b);
 mat4d operator-(const mat4d& a, const mat4d& b);
 mat4d operator*(const mat4d& a, const mat4d& b);
+float determinant(const mat4d& m);
 
 #endif /* SRC_MATH_MAT4D_H_ */
