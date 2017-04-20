@@ -3,6 +3,7 @@
  *
  *  Created on: Apr 7, 2017
  *      Author: constantin
+ * this is only an interface
  */
 
 #ifndef SRC_MATH_BODY_H_
